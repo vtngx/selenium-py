@@ -14,5 +14,3 @@
 > python3 -m pip install selenium
 2. Chromedriver
 > sudo apt install chromium-chromedriver
-## Configuration
-Edit the variables in .env.local file then change its name to .env.
