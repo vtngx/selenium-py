@@ -8,11 +8,12 @@ from selenium.webdriver.support import expected_conditions as EC
 
 load_dotenv()
 
+DRIVER = os.getenv('CHROME_DRIVER')
 URL = os.getenv('URL_GMAIL')
 EMAIL = os.getenv('EMAIL_GG')
 PASSWORD = os.getenv('PASSWORD_GG')
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(DRIVER)
 driver.get(URL)
 
 try:
